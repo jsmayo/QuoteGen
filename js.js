@@ -20,8 +20,26 @@ var quotes = [
 , 'If I look back when I begin to leave, will they remember me?'
 , 'Where was I when the rockets came to life, and carried you away into the alligator sky?'
 ];
+
 $(document).ready(newQuote());
+
+
 function newQuote() {
 	var rand = Math.floor(Math.random() * quotes.length);
 	document.getElementById('quoteContainer').innerHTML = quotes[rand];
 }
+
+
+function tweetQuote() {
+ //get inner text and replace inside the share
+  var phrase = document.getElementById('quoteContainer').innerText;
+  var tweetUrl = 'https://twitter.com/share?text=' +
+    encodeURIComponent(phrase) +
+    ' - QuoteGenerator By:' +
+    '&via=' +
+    'stevenmayo_';
+    
+  window.open(tweetUrl);
+}
+
+
