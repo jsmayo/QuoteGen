@@ -27,6 +27,7 @@ $(document).ready(newQuote());
 function newQuote() {
 	var rand = Math.floor(Math.random() * quotes.length);
 	document.getElementById('quoteContainer').innerHTML = quotes[rand];
+	this.data = quotes[rand];
 }
 
 
@@ -38,8 +39,19 @@ function tweetQuote() {
     ' - QuoteGenerator By:' +
     '&via=' +
     'stevenmayo_';
-    
   window.open(tweetUrl);
 }
+
+function tumblrPost() {
+	var phrase = document.getElementById('quoteContainer').innerText;
+	var tumblrURL = 'https://www.tumblr.com/widgets/share/tool?posttype=link&title=Random+%7C+Quote+%7C+Generator&caption=Basic+quote+generator.++All+quotes+from+Adam+Young+%28Owl+City%21%29%&content=' 
+		 encodeURIComponent(phrase) + 'buttons&tags=tumblelog%2C+blog%2C+tumblog%2C+tumbler%2C+tumblr%2C+tlog%2C+microblog&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button&_format=html'; 
+		
+		alert(tumblrURL);
+	window.open(tumblrURL);
+}
+
+
+
 
 

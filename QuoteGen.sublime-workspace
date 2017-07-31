@@ -180,7 +180,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 435.0
+		"width": 453.0
 	},
 	"console":
 	{
@@ -212,9 +212,9 @@
 	"file_history":
 	[
 		"/Users/Steven/GitHub/QuoteGen/index.html",
-		"/Users/Steven/GitHub/QuoteGen/index.sublime-workspace",
-		"/Users/Steven/GitHub/QuoteGen/js.js",
 		"/Users/Steven/GitHub/QuoteGen/style.css",
+		"/Users/Steven/GitHub/QuoteGen/js.js",
+		"/Users/Steven/GitHub/QuoteGen/index.sublime-workspace",
 		"/Users/Steven/Desktop/QuoteGen alias",
 		"/Users/Steven/GitHub/jsmayo.github.io/index.html",
 		"/Users/Steven/GitHub/jsmayo.github.io/portfolio.sublime-project",
@@ -454,6 +454,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"index.html"
+			]
 		],
 		"width": 0.0
 	},
@@ -483,7 +487,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 98.0,
+	"side_bar_width": 151.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
